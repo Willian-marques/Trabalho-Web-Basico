@@ -1,0 +1,78 @@
+ .abertura {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size: 60px;
+     color: #FFDD57;
+
+ }
+
+ .container {
+     background-color: rgb(115, 115, 115);
+     padding: 30px;
+     border-radius: 20px;
+     width: 50%;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 0px auto;
+     background-size: cover;
+     background-position: center;
+     box-shadow: 1px 1px 120px rgba(215, 217, 92, 0.35);
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+ }
+
+ form input[type="text"],
+ form input[type="email"],
+ form select,
+ form textarea {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+
+ .img {
+     padding: 15px 0;
+ }
+
+ #image img {
+     max-width: 100%;
+     max-height: 300px;
+     border-radius: 4px;
+     padding: 10px;
+ }
+
+ button {
+     width: 10%;
+     padding: 10px;
+     background-color: #3b3b3b;
+     color: #fff;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     font-size: 16px;
+     border: solid 2px black;
+ }
+
+ button:hover {
+     background-color: #1c1c1c;
+ }
+
+ .anonimo {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     /* Espaço entre o checkbox e o texto */
+ }
+
+ .anonimo input[type="checkbox"] {
+     margin: 0;
+     /* Remove margem ao redor do checkbox */
+ }

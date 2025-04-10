@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylenavfooter.css" type="text/css">
+    <link rel="stylesheet" href="css/formulario.css" type="text/css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <title>Formulario de Noticia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="homepage.html"><img src="img/logo.png" style="width: 300px;"></a>
+        </nav>
+        <nav>
+            <ul class="menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="formulario.html">Formulario Ocorrencia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="abertura" style="margin: 50px;">
+            <p>
+                <strong>Sabe de algo? Viu algo? Conte para nós!!</strong>
+            </p>
+        </div>
+        <section class="container">
+            <form action="#" method="post">
+                <div class="anonimo">
+                    <input type="checkbox" id="anonimo" name="anonimo" onchange="toggleAnonimato()">
+                    <label for="anonimo">Anônimo</label>
+                </div>
+                <br>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome"
+                    placeholder="Preencha o nome completo, sem espaços, underscores e/ou números" class="optional-field"
+                    required>
+
+                <div>
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="optional-field" required>
+                        <option value=""></option>
+                        <option value="Ecoville">Ecoville </option>
+                        <option value="Osório">Osório</option>
+                        <option value="Santo_Andrade">Santo Andrade</option>
+                        <option value="EAD">EAD</option>
+                    </select>
+                </div>
+
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Preencha o campo sem esquecer do @"
+                    class="optional-field" required>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" maxlength="2500"
+                    placeholder="Máximo de 2500 caracteres" required></textarea>
+
+                <label for="image">Envio de Imagem:</label>
+                <div class="img">
+                    <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+                </div>
+
+                <div id="image">
+                    <img id="preview" src="#" alt="Pré-visualização da imagem"
+                        style="display: none; max-width: 100%; margin-top: 15px; border-radius: 4px;">
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Todos os direitos reservados. <br>Desenvolvido por Willian Marques, Paulo Roberto Rocha, e Gabriel
+            Kremer.</p>
+        <p> <img src="img/zap.png" alt="zap" style="width: 20px; vertical-align: middle; margin-right: 5px;"> (99)
+            4002-8922</p>
+        <a href="https://www.instagram.com/celsoportiolli/?hl=pt-br" target="_blank">
+            <img src="img/Instagram_icon.png" alt="Instagram"
+                style="width: 20px; vertical-align: middle; margin-right: 5px; border-radius: 8px;">
+            Siga-nos no Instagram!
+        </a>
+    </footer>
+
+    <script link="text/javascript" src="javascript/forms.js"></script>
+</body>
+
+</html>
